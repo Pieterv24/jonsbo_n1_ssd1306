@@ -12,7 +12,8 @@ constexpr auto kFontWidth = 6;
 constexpr auto kLinesCount = 2;
 constexpr auto kOffsetY = 5;
 
-U8G2_SSD1306_128X32_UNIVISION_1_HW_I2C u8g2(U8G2_R0);
+// U8G2_SSD1306_128X32_UNIVISION_1_HW_I2C u8g2(U8G2_R0, [U8X8_PIN_NONE [, 9, 8]]);
+U8G2_SSD1306_128X32_UNIVISION_1_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE, 9, 8);
 
 String lines[kLinesCount];
 
